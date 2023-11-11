@@ -24,10 +24,10 @@ public class StatusService {
     }
 
     public long maxSales(long[] sales) {
-        long maxMonth = 0;
+        int maxMonth = 0;
 
         for (int i = 0; i < sales.length; i++) {
-            if (sales[i] >= sales[(int) maxMonth]) {
+            if (sales[i] >= sales[maxMonth]) {
                 maxMonth = i;
             }
         }
@@ -35,10 +35,10 @@ public class StatusService {
     }
 
     public long minSales(long[] sales) {
-        long minMonth = 0;
+        int minMonth = 0;
 
         for (int i = 0; i < sales.length; i++) {
-            if (sales[i] <= sales[(int) minMonth]) {
+            if (sales[i] <= sales[minMonth]) {
                 minMonth = i;
             }
         }
