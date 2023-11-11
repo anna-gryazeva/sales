@@ -53,19 +53,20 @@ public class StatusService {
                 countMonth++;
             }
         }
-            return countMonth;
-        }
+        return countMonth;
+    }
 
-        public int maxAvrgSales(long[] sales) {
+    public int maxAvrgSales(long[] sales) {
         int countMonth = 0;
         long avrgSales = avrgSales(sales);
-            for (long sale : sales) {
-                if (sale > avrgSales) {
-                    countMonth++;
+        for (long sale : sales) {
+            if (sale > avrgSales) {
+                countMonth++;
             }
 
-            } return countMonth;
         }
+        return countMonth;
+    }
 
 
 }

@@ -26,7 +26,7 @@ public class StatusServiceTest {
         long expectedSales = (8 + 15 + 13 + 15 + 17 + 20 + 19 + 20 + 7 + 14 + 14 + 18) / 12;
         long actualSales = service.avrgSales(sales);
 
-        Assertions.assertEquals(expectedSales,actualSales);
+        Assertions.assertEquals(expectedSales, actualSales);
 
     }
 
@@ -53,6 +53,7 @@ public class StatusServiceTest {
         Assertions.assertEquals(expectedMonth, actualMonth);
 
     }
+
     @Test
     public void shouldFindMinAvrgSales() {
         StatusService service = new StatusService();
@@ -64,6 +65,7 @@ public class StatusServiceTest {
 
         Assertions.assertEquals(expectedMonth, actualMonth);
     }
+
     @Test
     public void shouldFindMaxAvrgSales() {
         StatusService service = new StatusService();
